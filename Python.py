@@ -24,7 +24,7 @@ print("Результат: ", result)
 
 # Отправка результата на сайт
 url = "https://calc.itprotect.ru/api/result"
-data = {"login": "test", "password": "test123", "result": result}
+data = {"login": "test.itprotect.ru", "password": "test123", "result": result}
 response = requests.post(url, data=data)
 
 if response.status_code == 200:
